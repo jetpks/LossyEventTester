@@ -11,3 +11,6 @@ Now, on your second terminal run: `cat output_watcher`
 Then, run the test: `node eventer.js | tee output_watcher | wc -l`
 
 If the last number on both terminals don't match, then you're losing events.
+
+
+**NOTE:** This is supposed to grind the system to a halt.

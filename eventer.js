@@ -9,7 +9,11 @@
     ;
 
   catcher.on('a', function(num) {
-    crypto.createHash('md5').update(String(num)).digest("hex");
+    var index = 0
+      ;
+    while(index++ < num) {
+      crypto.createHash('md5').update(String(num)).digest("hex");
+    }
     console.log(num);
   });
 
