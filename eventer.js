@@ -3,7 +3,7 @@
   var emitter = require('events').EventEmitter
     , catcher = new emitter()
     , count = 0
-    , timeout = 100 * 1000
+    , timeout = 1000*1000
     , crypto = require('crypto')
     , interval
     ;
